@@ -1,5 +1,5 @@
-#VSCode QQ 快捷图片插入脚本
-用于在VSCode QQ中快速插入发送图片命令的脚本
+# VSCode QQ 快捷图片插入脚本
+用于在Linux中用VSCode QQ中快速插入发送图片命令的脚本\\
 用法：
 1. **用Linux包管理器安装`xclip`**
 2. 下载Python脚本，修改`img_dir`变量为本地图片目录，注意必须在目录后加上`/*`以表示目录下所有文件
