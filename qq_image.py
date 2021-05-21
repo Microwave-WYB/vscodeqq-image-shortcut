@@ -4,11 +4,10 @@ import pyperclip
 import os
 import glob
 
+img_dir = "/home/username/图片/*"  # 重要：修改为本地图片目录，在后面加上 /* 表示该目录下所有文件
+img_text = input("拖动图片到终端/输入绝对路径（直接回车将选择图片目录下最新文件）: ")
 
-img_text = input("Drop image here: ")
-img_dir = "/home/wyb/图片/*"
-
-# empty path: copy the path to the most recent file in image dir
+# 直接回车：插入图片目录下
 if len(img_text) == 0:
     list_of_files = glob.glob(img_dir)
     latest_file = max(list_of_files, key=os.path.getctime)
