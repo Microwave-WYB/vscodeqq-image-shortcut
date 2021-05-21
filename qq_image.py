@@ -1,5 +1,4 @@
 #!/bin/python
-from posixpath import split
 import pyperclip
 import os
 import glob
