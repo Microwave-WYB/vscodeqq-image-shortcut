@@ -13,11 +13,11 @@ if len(img_text) == 0:
     latest_file = max(list_of_files, key=os.path.getctime)
     img_text = str(latest_file)
 
-# path begins with quote: remove quote
+# 去掉路径中的引号
 if img_text[0] == "\'":
     img_text = img_text.replace("\'", "")
 
-# copy command to clipboard
+# 复制命令到剪贴板
 pyperclip.copy("[CQ:image,file=" + img_text + "]")
 text = pyperclip.paste()
 print(text)
